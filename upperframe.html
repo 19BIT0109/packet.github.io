@@ -1,0 +1,16 @@
+﻿<html> <head>
+</head>
+<body>
+<p id="demo" align="right" style="font-size:100px;color:red;"></p>
+<script type="text/javascript">
+setInterval(clock,1000);
+function clock(){
+var dt=new Date();
+var hr=dt.getHours();
+var min=dt.getMinutes();
+var sec=dt.getSeconds();
+document.getElementById("demo").innerHTML=hr+":"+min+":"+sec;
+}
+</script>
+</body>
+</html> 

@@ -1,0 +1,21 @@
+﻿<html>
+<head>
+<script>
+</script>
+</head>
+<body>
+Number of tickets<input type="number" name="" id="count">
+<br>
+<input type="submit" onclick="availabilty()">
+<h3 id="h3"></h3>
+<script>
+function availabilty() {
+var n = document.getElementById("count").value;
+if (n < 10) {
+document.getElementById("h3").innerText = "Tickets Available";
+} else
+document.getElementById("h3").innerText = "Tickets Not Available";
+}
+</script>
+</body>
+</html>
